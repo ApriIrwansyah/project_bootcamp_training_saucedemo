@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  <groupId>project_bootcamp_training_saucedemo</groupId>
+  <artifactId>project_bootcamp_training_saucedemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+      <properties>
+   		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<maven.compiler.release>21</maven.compiler.release> <!-- 17 -->
+    	<maven.compiler.source>21</maven.compiler.source>
+    	<maven.compiler.target>21</maven.compiler.target>
+  	</properties> 	
+  
+  <repositories>
+    <repository>
+        <id>local</id>
+        <url>file://${user.home}/.m2/repository</url>
+    </repository>
+  </repositories>
+
+
+<dependencies>
+    <!-- Selenium WebDriver -->   
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-java</artifactId>
+    	<version>4.33.0</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>io.github.bonigarcia</groupId>
+    	<artifactId>webdrivermanager</artifactId>
+    	<version>6.1.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v137 -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-devtools-v137</artifactId>
+    	<version>4.33.0</version>
+	</dependency>
+
+    <!-- Apache Commons IO untuk menangani file screenshot: -->
+    <dependency>
+    	<groupId>commons-io</groupId>
+    	<artifactId>commons-io</artifactId>
+    	<version>2.11.0</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-simple</artifactId>
+  		<version>1.7.36</version>
+	</dependency>
+	
+	<!-- TestNG-->
+	<dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>7.7.1</version>
+    	<scope>test</scope>
+	</dependency>
+
+    <dependency>
+    <groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-testng</artifactId>
+    	<version>7.12.0</version>
+	</dependency>
+
+    <!-- Cucumber for BDD -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>7.13.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>7.13.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Extent Reports for reporting -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>5.1.1</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.webjars.npm/unist-util-find-after -->
+	<dependency>
+    	<groupId>org.webjars.npm</groupId>
+    	<artifactId>unist-util-find-after</artifactId>
+    	<version>5.0.0</version>
+	</dependency>
+
+  </dependencies>
+
+  
+</project>
